@@ -1,0 +1,29 @@
+header {
+  background-image: url('../images/mac-pro.jpg');
+  background-size: cover;
+  min-height: 100vh;
+  .navbar {
+    // background-color: #3498db;
+    a {
+      color: #FFF;
+    }
+    .navbar-brand {
+      h4 {
+        font-weight: bold;
+        margin-bottom: 0;
+      }
+    }
+    .navbar-nav {
+      .nav-item {
+        font-size: 1.0652em;
+        .nav-link {
+          opacity: .6;
+          transition: opacity .5s;
+          &.active, &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

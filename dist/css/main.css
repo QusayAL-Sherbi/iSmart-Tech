@@ -1,0 +1,35 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #CCC;
+}
+
+header {
+  background-image: url("../images/mac-pro.jpg");
+  background-size: cover;
+  min-height: 100vh;
+}
+
+header .navbar a {
+  color: #FFF;
+}
+
+header .navbar .navbar-brand h4 {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+header .navbar .navbar-nav .nav-item {
+  font-size: 1.0652em;
+}
+
+header .navbar .navbar-nav .nav-item .nav-link {
+  opacity: .6;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+header .navbar .navbar-nav .nav-item .nav-link.active, header .navbar .navbar-nav .nav-item .nav-link:hover {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=main.css.map */
