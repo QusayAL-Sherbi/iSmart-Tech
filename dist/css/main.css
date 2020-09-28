@@ -1,6 +1,12 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #CCC;
+  height: 3000px;
+}
+
+.main-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 header {
@@ -30,6 +36,32 @@ header .navbar .navbar-nav .nav-item .nav-link {
 
 header .navbar .navbar-nav .nav-item .nav-link.active, header .navbar .navbar-nav .nav-item .nav-link:hover {
   opacity: 1;
+}
+
+.products .products-container .product {
+  background-color: #bebebe;
+  margin-bottom: 1.3rem;
+  padding: 15px;
+  position: relative;
+}
+
+.products .products-container .product .img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.products .products-container .product .product-info {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #FFF;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+}
+
+.products .products-container .product .product-info .product-title {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

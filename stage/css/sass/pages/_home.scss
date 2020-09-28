@@ -1,0 +1,28 @@
+.products {
+  .products-container {
+    .product {
+      background-color: #bebebe;
+      margin-bottom: 1.3rem;
+      padding: 15px;
+      position: relative;
+      .img-container {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .product-info {
+        background-color: rgba(#000, .6);
+        color: #FFF;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 10px;
+        .product-title {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
