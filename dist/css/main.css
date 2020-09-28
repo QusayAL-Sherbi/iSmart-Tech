@@ -64,4 +64,34 @@ header .navbar .navbar-nav .nav-item .nav-link.active, header .navbar .navbar-na
   text-align: center;
 }
 
+.products .products-container .product .product-options {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 55px;
+}
+
+.products .products-container .product .product-options ul {
+  position: relative;
+}
+
+.products .products-container .product .product-options ul li {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  padding: 5px;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
+.products .products-container .product .product-options ul li .heart-icon {
+  color: #FFF;
+}
+
 /*# sourceMappingURL=main.css.map */
