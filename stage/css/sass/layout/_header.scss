@@ -4,12 +4,13 @@ header {
   background-size: cover;
   min-height: 100vh;
   .navbar {
-    // background-color: #3498db;
+    // background-color: $blueColor;
     a {
       color: #FFF;
     }
     .navbar-brand {
       h4 {
+        color: $blueColor;
         font-weight: bold;
         margin-bottom: 0;
       }
@@ -19,9 +20,34 @@ header {
         font-size: 1.0652em;
         .nav-link {
           opacity: .6;
-          transition: opacity .5s;
+          color: #FFF;
+          transition: all .5s;
+          font-weight: bold;
           &.active, &:hover {
             opacity: 1;
+            color: $blueColor;
+          }
+        }
+        .cart {
+          font-size: 1.3em;
+        }
+        .dropdown-toggle {
+          &::after {
+            display: none;
+          }
+        }
+        .dropdown-menu {
+          &::before {
+            display: inline-block;
+            margin-left: .255em;
+            content: "";
+            border-top: .4em solid transparent;
+            border-right: .4em solid transparent;
+            border-bottom: .4em solid #FFF;
+            border-left: .3em solid transparent;
+            position: absolute;
+            top: -13px;
+            right: 12px;
           }
         }
       }
@@ -38,6 +64,13 @@ header {
         left: 50%;
         bottom: 0;
         transform: translate(-50%, -35%);
+      }
+    }
+    .carousel-indicators li {
+      height: 5px;
+      border-radius: 5px;
+      &.active, &:hover {
+        background-color: $blueColor;
       }
     }
   }

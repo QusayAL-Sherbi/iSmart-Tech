@@ -1,4 +1,9 @@
 .products {
+  .section-title {
+    color: $blueColor;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
   .products-container {
     .product {
       background-color: #bebebe;
@@ -6,6 +11,7 @@
       padding: 15px;
       position: relative;
       max-width: 19rem;
+      cursor: pointer;
       .img-container {
         img {
           width: 100%;
@@ -25,7 +31,6 @@
         }
       }
       .product-options {
-        // background-color: #070;
         position: absolute;
         top: 0;
         right: 0;
@@ -34,19 +39,19 @@
         ul {
           position: relative;
           li {
-            background-color: rgba(#000, .7);
+            background-color: rgba(190, 190, 190, .8);
             position: absolute;
             top: 0;
             right: 0;
-            width: 100%;
             display: block;
             overflow: hidden;
             text-align: center;
-            padding: 5px;
-            font-size: 1.8em;
+            padding: 0 10px;
+            font-size: 1.5em;
+            border-radius: 0 0 0 20px;
             cursor: pointer;
             .heart-icon {
-              color: #FFF;
+              color: #000;
             }
           }
         }

@@ -20,6 +20,7 @@ header .navbar a {
 }
 
 header .navbar .navbar-brand h4 {
+  color: #2196f3;
   font-weight: bold;
   margin-bottom: 0;
 }
@@ -30,12 +31,36 @@ header .navbar .navbar-nav .nav-item {
 
 header .navbar .navbar-nav .nav-item .nav-link {
   opacity: .6;
-  -webkit-transition: opacity .5s;
-  transition: opacity .5s;
+  color: #FFF;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  font-weight: bold;
 }
 
 header .navbar .navbar-nav .nav-item .nav-link.active, header .navbar .navbar-nav .nav-item .nav-link:hover {
   opacity: 1;
+  color: #2196f3;
+}
+
+header .navbar .navbar-nav .nav-item .cart {
+  font-size: 1.3em;
+}
+
+header .navbar .navbar-nav .nav-item .dropdown-toggle::after {
+  display: none;
+}
+
+header .navbar .navbar-nav .nav-item .dropdown-menu::before {
+  display: inline-block;
+  margin-left: .255em;
+  content: "";
+  border-top: .4em solid transparent;
+  border-right: .4em solid transparent;
+  border-bottom: .4em solid #FFF;
+  border-left: .3em solid transparent;
+  position: absolute;
+  top: -13px;
+  right: 12px;
 }
 
 header .carousel .carousel-item {
@@ -53,12 +78,28 @@ header .carousel .carousel-item .fixed-img {
           transform: translate(-50%, -35%);
 }
 
+header .carousel .carousel-indicators li {
+  height: 5px;
+  border-radius: 5px;
+}
+
+header .carousel .carousel-indicators li.active, header .carousel .carousel-indicators li:hover {
+  background-color: #2196f3;
+}
+
+.products .section-title {
+  color: #2196f3;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
 .products .products-container .product {
   background-color: #bebebe;
   margin: 0 auto 1.3rem auto;
   padding: 15px;
   position: relative;
   max-width: 19rem;
+  cursor: pointer;
 }
 
 .products .products-container .product .img-container img {
@@ -93,21 +134,21 @@ header .carousel .carousel-item .fixed-img {
 }
 
 .products .products-container .product .product-options ul li {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(190, 190, 190, 0.8);
   position: absolute;
   top: 0;
   right: 0;
-  width: 100%;
   display: block;
   overflow: hidden;
   text-align: center;
-  padding: 5px;
-  font-size: 1.8em;
+  padding: 0 10px;
+  font-size: 1.5em;
+  border-radius: 0 0 0 20px;
   cursor: pointer;
 }
 
 .products .products-container .product .product-options ul li .heart-icon {
-  color: #FFF;
+  color: #000;
 }
 
 /*# sourceMappingURL=main.css.map */
