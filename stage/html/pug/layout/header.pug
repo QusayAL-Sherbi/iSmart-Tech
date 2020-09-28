@@ -21,15 +21,45 @@ header
             a.nav-link(href='#') Smart Watches
           li.nav-item
             a.nav-link(href='#') Accessories
-          //- li.nav-item.dropdown
-          //-   a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-expanded='false')
-          //-     | Dropdown
-          //-   ul.dropdown-menu(aria-labelledby='navbarDropdown')
-          //-     li
-          //-       a.dropdown-item(href='#') Action
-          //-     li
-          //-       a.dropdown-item(href='#') Another action
-          //-     li
-          //-       hr.dropdown-divider
-          //-     li
-          //-       a.dropdown-item(href='#') Something else here
+
+  #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+    .carousel-inner
+      .carousel-item.active
+        img.d-block.fixed-img(src='images/iPhone/iPhone-11-Pro-Space-Gray.png' alt='')
+      .carousel-item
+        img.d-block.fixed-img(src='images/iPhone/iPhone-11-Pro-Silver.png' alt='')
+      .carousel-item
+        img.d-block.fixed-img(src='images/iPhone/iPhone-11-Pro-Gold.png' alt='')
+      .carousel-item
+        img.d-block.fixed-img(src='images/iPhone/iPhone-11-Pro-MedNight-Green.png' alt='')
+    a.carousel-control-prev(href='#carouselExampleIndicators' role='button' data-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.sr-only Previous
+    a.carousel-control-next(href='#carouselExampleIndicators' role='button' data-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.sr-only Next
+    ol.carousel-indicators
+      li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+      li(data-target='#carouselExampleIndicators' data-slide-to='1')
+      li(data-target='#carouselExampleIndicators' data-slide-to='2')
+      li(data-target='#carouselExampleIndicators' data-slide-to='3')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

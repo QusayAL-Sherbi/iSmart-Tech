@@ -1,5 +1,6 @@
 header {
-  background-image: url('../images/mac-pro.jpg');
+  background-color: #000;
+  // background-image: url('../images/mac-pro.jpg');
   background-size: cover;
   min-height: 100vh;
   .navbar {
@@ -23,6 +24,20 @@ header {
             opacity: 1;
           }
         }
+      }
+    }
+  }
+  .carousel {    
+    .carousel-item {
+      height: 100vh;
+      .fixed-img {
+        max-width: 75%;
+        max-height: 75%;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, -35%);
       }
     }
   }

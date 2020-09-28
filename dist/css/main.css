@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background-image: url("../images/mac-pro.jpg");
+  background-color: #000;
   background-size: cover;
   min-height: 100vh;
 }
@@ -38,11 +38,27 @@ header .navbar .navbar-nav .nav-item .nav-link.active, header .navbar .navbar-na
   opacity: 1;
 }
 
+header .carousel .carousel-item {
+  height: 100vh;
+}
+
+header .carousel .carousel-item .fixed-img {
+  max-width: 75%;
+  max-height: 75%;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%, -35%);
+          transform: translate(-50%, -35%);
+}
+
 .products .products-container .product {
   background-color: #bebebe;
-  margin-bottom: 1.3rem;
+  margin: 0 auto 1.3rem auto;
   padding: 15px;
   position: relative;
+  max-width: 19rem;
 }
 
 .products .products-container .product .img-container img {
