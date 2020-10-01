@@ -8,15 +8,48 @@
     .product {
       background-color: #bebebe;
       margin: 0 auto 1.3rem auto;
-      padding: 15px;
+      padding: 30px 15px 15px 15px;
       position: relative;
       max-width: 19rem;
+      border: none;
       cursor: pointer;
+      transition: all .5s;
+      &:hover {
+        box-shadow: 0 0 5px 2px $blueColor;
+      }
       .img-container {
         img {
           width: 100%;
           height: 100%;
         }
+      }
+      .love-button {
+        /* background-color: rgba(0, 0, 0, 0.6); */
+        color: #000;
+        position: absolute;
+        top: -2px;
+        right: 1px;
+        font-size: 1.5em;
+        font-weight: bold;
+        border-radius: 50%;
+        padding: 0;
+        width: 36px;
+        height: 36px;
+      }
+      .guidance-msg {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #FFF;
+        position: absolute;
+        top: 35%;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        margin: auto;
+        width: 212px;
+        text-align: center;
+        padding: 5px;
+        font-weight: bold;
+        border-radius: 7px;
       }
       .product-info {
         background-color: rgba(#000, .6);
@@ -28,32 +61,6 @@
         padding: 10px;
         .product-title {
           text-align: center;
-        }
-      }
-      .product-options {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        width: 55px;
-        ul {
-          position: relative;
-          li {
-            background-color: rgba(190, 190, 190, .8);
-            position: absolute;
-            top: 0;
-            right: 0;
-            display: block;
-            overflow: hidden;
-            text-align: center;
-            padding: 0 10px;
-            font-size: 1.5em;
-            border-radius: 0 0 0 20px;
-            cursor: pointer;
-            .heart-icon {
-              color: #000;
-            }
-          }
         }
       }
     }

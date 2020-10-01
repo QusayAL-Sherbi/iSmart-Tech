@@ -15,6 +15,23 @@ header {
   min-height: 100vh;
 }
 
+header .navbar .navbar-nav {
+  width: 93%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .navbar .navbar-toggler .navbar-toggler-icon {
+  background-color: #FFF;
+  display: block;
+  height: 3px;
+  border-radius: 5px;
+}
+
+header .navbar .navbar-toggler .navbar-toggler-icon:nth-last-of-type(2) {
+  margin: 5px 0;
+}
+
 header .navbar a {
   color: #FFF;
 }
@@ -25,11 +42,16 @@ header .navbar .navbar-brand h4 {
   margin-bottom: 0;
 }
 
-header .navbar .navbar-nav .nav-item {
+header .navbar .navbar-collapse {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item {
   font-size: 1.0652em;
 }
 
-header .navbar .navbar-nav .nav-item .nav-link {
+header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   opacity: .6;
   color: #FFF;
   -webkit-transition: all .5s;
@@ -37,20 +59,29 @@ header .navbar .navbar-nav .nav-item .nav-link {
   font-weight: bold;
 }
 
-header .navbar .navbar-nav .nav-item .nav-link.active, header .navbar .navbar-nav .nav-item .nav-link:hover {
+header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active, header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   opacity: 1;
   color: #2196f3;
 }
 
-header .navbar .navbar-nav .nav-item .cart {
+header .navbar .navbar-collapse .navbar-nav .nav-item .cart-icon {
   font-size: 1.3em;
 }
 
-header .navbar .navbar-nav .nav-item .dropdown-toggle::after {
+header .navbar .navbar-collapse .navbar-nav .nav-item .search-icon {
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-toggle::after {
   display: none;
 }
 
-header .navbar .navbar-nav .nav-item .dropdown-menu::before {
+header .navbar .navbar-collapse .navbar-nav .nav-item .cart-dropdown-menu {
+  width: 375px;
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item .cart-dropdown-menu::before {
   display: inline-block;
   margin-left: .255em;
   content: "";
@@ -60,7 +91,15 @@ header .navbar .navbar-nav .nav-item .dropdown-menu::before {
   border-left: .3em solid transparent;
   position: absolute;
   top: -13px;
-  right: 12px;
+  right: 11px;
+}
+
+header .navbar .navbar-collapse .navbar-nav .dropdown-menu .cart-heading {
+  color: #2196f3;
+}
+
+header .navbar .navbar-collapse .navbar-nav .dropdown-menu span {
+  display: block;
 }
 
 header .carousel .carousel-item {
@@ -68,8 +107,8 @@ header .carousel .carousel-item {
 }
 
 header .carousel .carousel-item .fixed-img {
-  max-width: 75%;
-  max-height: 75%;
+  max-width: 55%;
+  max-height: 55%;
   position: absolute;
   top: 35%;
   left: 50%;
@@ -96,15 +135,53 @@ header .carousel .carousel-indicators li.active, header .carousel .carousel-indi
 .products .products-container .product {
   background-color: #bebebe;
   margin: 0 auto 1.3rem auto;
-  padding: 15px;
+  padding: 30px 15px 15px 15px;
   position: relative;
   max-width: 19rem;
+  border: none;
   cursor: pointer;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.products .products-container .product:hover {
+  -webkit-box-shadow: 0 0 5px 2px #2196f3;
+          box-shadow: 0 0 5px 2px #2196f3;
 }
 
 .products .products-container .product .img-container img {
   width: 100%;
   height: 100%;
+}
+
+.products .products-container .product .love-button {
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  color: #000;
+  position: absolute;
+  top: -2px;
+  right: 1px;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+}
+
+.products .products-container .product .guidance-msg {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #FFF;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  margin: auto;
+  width: 212px;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 7px;
 }
 
 .products .products-container .product .product-info {
@@ -119,36 +196,6 @@ header .carousel .carousel-indicators li.active, header .carousel .carousel-indi
 
 .products .products-container .product .product-info .product-title {
   text-align: center;
-}
-
-.products .products-container .product .product-options {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 55px;
-}
-
-.products .products-container .product .product-options ul {
-  position: relative;
-}
-
-.products .products-container .product .product-options ul li {
-  background-color: rgba(190, 190, 190, 0.8);
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
-  overflow: hidden;
-  text-align: center;
-  padding: 0 10px;
-  font-size: 1.5em;
-  border-radius: 0 0 0 20px;
-  cursor: pointer;
-}
-
-.products .products-container .product .product-options ul li .heart-icon {
-  color: #000;
 }
 
 /*# sourceMappingURL=main.css.map */
