@@ -4,6 +4,16 @@ body {
   height: 3000px;
 }
 
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .main-section {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -135,13 +145,14 @@ header .carousel .carousel-indicators li.active, header .carousel .carousel-indi
 .products .products-container .product {
   background-color: #bebebe;
   margin: 0 auto 1.3rem auto;
-  padding: 30px 15px 15px 15px;
+  padding: 30px 15px 0 15px;
   position: relative;
-  max-width: 19rem;
   border: none;
   cursor: pointer;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: -webkit-box-shadow .7s;
+  transition: -webkit-box-shadow .7s;
+  transition: box-shadow .7s;
+  transition: box-shadow .7s, -webkit-box-shadow .7s;
 }
 
 .products .products-container .product:hover {
@@ -155,7 +166,6 @@ header .carousel .carousel-indicators li.active, header .carousel .carousel-indi
 }
 
 .products .products-container .product .love-button {
-  /* background-color: rgba(0, 0, 0, 0.6); */
   color: #000;
   position: absolute;
   top: -2px;
@@ -166,6 +176,7 @@ header .carousel .carousel-indicators li.active, header .carousel .carousel-indi
   padding: 0;
   width: 36px;
   height: 36px;
+  display: none;
 }
 
 .products .products-container .product .guidance-msg {
@@ -184,18 +195,59 @@ header .carousel .carousel-indicators li.active, header .carousel .carousel-indi
   border-radius: 7px;
 }
 
+.products .products-container .product .product-rate {
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.products .products-container .product .product-rate li {
+  font-size: 1.3em;
+  color: #ffc107;
+  display: inline-block;
+}
+
 .products .products-container .product .product-info {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #FFF;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 10px;
+  color: #000;
+  margin-top: 10px;
 }
 
 .products .products-container .product .product-info .product-title {
   text-align: center;
+}
+
+.products .products-container .product .product-info .product-desc {
+  margin-bottom: 10px;
+}
+
+.products .products-container .product .product-actions {
+  text-align: center;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products .products-container .product .product-actions button, .products .products-container .product .product-actions a {
+  width: 50%;
+}
+
+.products .products-container .product .product-actions a {
+  color: #434343;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.050em;
+}
+
+.products .products-container .product .product-actions a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=main.css.map */

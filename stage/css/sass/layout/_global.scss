@@ -4,6 +4,15 @@ body {
   height: 3000px;
 }
 
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+  box-shadow: none;
+}
+
 .main-section {
   padding-top: 40px;
   padding-bottom: 40px;
