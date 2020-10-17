@@ -136,6 +136,25 @@ header .carousel .carousel-indicators li.active, header .carousel .carousel-indi
   background-color: #2196f3;
 }
 
+.features .feat-box {
+  background-color: #cfcfcf;
+  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.features .feat-box .icon-container img {
+  width: 40%;
+  height: 40%;
+}
+
+.features .feat-box .feat-title {
+  margin: 10px 0 0 0;
+  font-size: 1.2em;
+}
+
 .products .section-title {
   color: #2196f3;
   font-weight: bold;
