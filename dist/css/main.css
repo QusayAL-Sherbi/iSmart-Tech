@@ -19,10 +19,20 @@ body {
   padding-bottom: 40px;
 }
 
+.section-title {
+  color: #2196f3;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 header {
   background-color: #000;
-  background-size: cover;
   min-height: 100vh;
+}
+
+header .navbar {
+  background-color: #000;
 }
 
 header .navbar .navbar-nav {
@@ -64,9 +74,10 @@ header .navbar .navbar-collapse .navbar-nav .nav-item {
 header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   opacity: .6;
   color: #FFF;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .3s;
+  transition: all .3s;
   font-weight: bold;
+  will-change: opacity;
 }
 
 header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active, header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
@@ -112,6 +123,72 @@ header .navbar .navbar-collapse .navbar-nav .dropdown-menu span {
   display: block;
 }
 
+header .navbar .navbar-collapse .navbar-nav .search-window {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #FFF;
+  z-index: 9999;
+  display: none;
+}
+
+header .navbar .navbar-collapse .navbar-nav .search-window .search-window-container {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+  header .navbar .navbar-collapse .navbar-nav .search-window .search-window-container {
+    width: 90%;
+  }
+}
+
+header .navbar .navbar-collapse .navbar-nav .search-window .search-window-container .search-field {
+  width: 100%;
+  padding: 5px 10px;
+  border: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header .navbar .navbar-collapse .navbar-nav .search-window .search-window-container .search-field:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 4px 1px #03a9f4;
+          box-shadow: 0 0 4px 1px #03a9f4;
+}
+
+header .navbar .navbar-collapse .navbar-nav .search-window .search-window-container .search-button, header .navbar .navbar-collapse .navbar-nav .search-window .search-window-container .close-button {
+  float: left;
+  width: 49%;
+  margin-top: .8em;
+}
+
+@media (max-width: 767px) {
+  header .navbar .navbar-collapse .navbar-nav .search-window .search-window-container .search-button, header .navbar .navbar-collapse .navbar-nav .search-window .search-window-container .close-button {
+    width: 100%;
+    float: none;
+    display: block;
+    margin-top: 3%;
+  }
+}
+
+@media (min-width: 768px) {
+  header .navbar .navbar-collapse .navbar-nav .search-window .search-window-container .search-button {
+    margin-right: 1%;
+  }
+  header .navbar .navbar-collapse .navbar-nav .search-window .search-window-container .close-button {
+    margin-left: 1%;
+  }
+}
+
 header .carousel .carousel-item {
   height: 100vh;
 }
@@ -120,11 +197,15 @@ header .carousel .carousel-item .fixed-img {
   max-width: 55%;
   max-height: 55%;
   position: absolute;
-  top: 35%;
+  top: 45%;
   left: 50%;
   bottom: 0;
-  -webkit-transform: translate(-50%, -35%);
-          transform: translate(-50%, -35%);
+  -webkit-transform: translate(-50%, -45%);
+          transform: translate(-50%, -45%);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 header .carousel .carousel-indicators li {
@@ -137,17 +218,17 @@ header .carousel .carousel-indicators li.active, header .carousel .carousel-indi
 }
 
 .features .feat-box {
-  background-color: #cfcfcf;
-  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6);
-          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6);
   padding: 10px;
   margin: 0 auto;
   border-radius: 4px;
+  text-align: center;
 }
 
-.features .feat-box .icon-container img {
-  width: 40%;
-  height: 40%;
+.features .feat-box img {
+  margin: 0 auto 10px auto;
+  display: block;
+  width: 80px;
+  height: 80px;
 }
 
 .features .feat-box .feat-title {
@@ -155,118 +236,74 @@ header .carousel .carousel-indicators li.active, header .carousel .carousel-indi
   font-size: 1.2em;
 }
 
-.products .section-title {
-  color: #2196f3;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.products .products-container .product {
-  background-color: #bebebe;
-  margin: 0 auto 1.3rem auto;
-  padding: 30px 15px 0 15px;
-  position: relative;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: -webkit-box-shadow .7s;
-  transition: -webkit-box-shadow .7s;
-  transition: box-shadow .7s;
-  transition: box-shadow .7s, -webkit-box-shadow .7s;
-}
-
-.products .products-container .product:hover {
-  -webkit-box-shadow: 0 0 5px 2px #2196f3;
-          box-shadow: 0 0 5px 2px #2196f3;
-}
-
-.products .products-container .product .img-container img {
-  width: 100%;
-  height: 100%;
-}
-
-.products .products-container .product .love-button {
-  color: #000;
-  position: absolute;
-  top: -2px;
-  right: 1px;
-  font-size: 1.5em;
-  font-weight: bold;
-  border-radius: 50%;
-  padding: 0;
-  width: 36px;
-  height: 36px;
-  display: none;
-}
-
-.products .products-container .product .guidance-msg {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #FFF;
-  position: absolute;
-  top: 35%;
-  left: 0;
-  right: 0;
-  z-index: 999;
+.products .product {
+  background-color: #bcbcbc;
+  border-color: transparent;
   margin: auto;
-  width: 212px;
+  max-width: 18rem;
+  min-height: 545px;
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow .5s;
+  transition: -webkit-box-shadow .5s;
+  transition: box-shadow .5s;
+  transition: box-shadow .5s, -webkit-box-shadow .5s;
+}
+
+.products .product.loved {
+  -webkit-box-shadow: 0 0 5px 2px #f60000;
+          box-shadow: 0 0 5px 2px #f60000;
+}
+
+@media (max-width: 767px) {
+  .products .product {
+    max-width: 95%;
+  }
+}
+
+.products .product .img-container {
+  width: 85%;
+  height: auto;
+  margin: 1rem auto 0 auto;
+  overflow: hidden;
+}
+
+.products .product .img-container img {
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.products .product .card-title {
   text-align: center;
-  padding: 5px;
+}
+
+@media (max-width: 767px) {
+  .products .product .card-footer button {
+    margin-top: 5px;
+  }
+}
+
+.products .product .card-footer .btn-link {
   font-weight: bold;
-  border-radius: 7px;
-}
-
-.products .products-container .product .product-rate {
-  margin-top: 5px;
-  margin-bottom: 0;
-  padding: 5px 0;
-  text-align: center;
-}
-
-.products .products-container .product .product-rate li {
-  font-size: 1.3em;
-  color: #ffc107;
-  display: inline-block;
-}
-
-.products .products-container .product .product-info {
-  color: #000;
-  margin-top: 10px;
-}
-
-.products .products-container .product .product-info .product-title {
-  text-align: center;
-}
-
-.products .products-container .product .product-info .product-desc {
-  margin-bottom: 10px;
-}
-
-.products .products-container .product .product-actions {
-  text-align: center;
-  padding: 10px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.products .products-container .product .product-actions button, .products .products-container .product .product-actions a {
-  width: 50%;
-}
-
-.products .products-container .product .product-actions a {
-  color: #434343;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1.050em;
+  font-size: 1.025em;
 }
 
-.products .products-container .product .product-actions a:hover {
-  text-decoration: underline;
+.products .product .card-header {
+  position: relative;
+}
+
+.products .product .card-header .love-icon {
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  -webkit-transform: translate(-3%, -50%);
+          transform: translate(-3%, -50%);
+  font-size: 1.6rem;
 }
 
 /*# sourceMappingURL=main.css.map */

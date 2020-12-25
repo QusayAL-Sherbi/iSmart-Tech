@@ -1,10 +1,8 @@
 header {
   background-color: #000;
-  // background-image: url('../images/mac-pro.jpg');
-  background-size: cover;
   min-height: 100vh;
   .navbar {
-    // background-color: $blueColor;
+    background-color: #000;
     .navbar-nav {
       width: 93%;
       justify-content: space-around;
@@ -38,8 +36,9 @@ header {
           .nav-link {
             opacity: .6;
             color: #FFF;
-            transition: all .5s;
+            transition: all .3s;
             font-weight: bold;
+            will-change: opacity;
             &.active, &:hover {
               opacity: 1;
               color: $blueColor;
@@ -82,6 +81,55 @@ header {
             // margin-bottom: 10px;
           }
         }
+
+        // Search Window Rules
+        .search-window {
+          @include overlay;
+          background-color: rgba(#000, .6);
+          color: #FFF;
+          z-index: 9999;
+          display: none;
+          .search-window-container {
+            width: 40%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @media (max-width: 767px) {
+              width: 90%;
+            }
+            .search-field {
+              width: 100%;
+              padding: 5px 10px;
+              border: none;
+              transition: .5s;
+              &:focus {
+                outline: none;
+                box-shadow: 0 0 4px 1px #03a9f4;
+              }
+            }
+            .search-button, .close-button {
+              float: left;
+              width: 49%;
+              margin-top: .8em;
+              @media (max-width: 767px) {
+                width: 100%;
+                float: none;
+                display: block;
+                margin-top: 3%;
+              }
+            }
+            @media (min-width: 768px) {
+              .search-button {
+                margin-right: 1%;
+              }
+              .close-button {
+                margin-left: 1%;
+              }
+            }
+          }
+        }
+
       }
     }
   }
@@ -92,10 +140,11 @@ header {
         max-width: 55%;
         max-height: 55%;
         position: absolute;
-        top: 35%;
+        top: 45%;
         left: 50%;
         bottom: 0;
-        transform: translate(-50%, -35%);
+        transform: translate(-50%, -45%);
+        user-select: none;
       }
     }
     .carousel-indicators li {

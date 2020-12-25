@@ -5,7 +5,7 @@ const gulp = require("gulp"),                   // Import (Gulp) Module From Nod
   concat = require("gulp-concat"),              // Import (Concat) Package
   livereload = require("gulp-livereload"),      // Import (Live Reload) Package
   sourcemaps = require("gulp-sourcemaps"),      // Import (Sourcemaps) Package
-  uglify = require("gulp-uglify"),              // Import (Uglify) Package
+  uglify = require("gulp-uglify-es").default,   // Import (Uglify) Package
   notify = require("gulp-notify"),              // Import (Notify) Package
   zip = require("gulp-zip"),                    // Import (Zip) Package
   ftp = require("vinyl-ftp");                   // Import (vinyl-ftp) Package
@@ -92,7 +92,7 @@ gulp.task("watch", function () {
 */
 
 
-/* 
+/*
   More Packages :
 
   - gulp-babel

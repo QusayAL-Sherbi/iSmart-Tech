@@ -11,289 +11,116 @@ html(lang="en")
     include pug/layout/header
     // End Header 
 
-    // Start Features
-    section.main-section.features.text-center
-      .container-fluid
-        .row
-          .col-md-2.feat-box
-            .icon-container
-              img(src="images/icons/multi-langs.svg" alt="")
-            h6.feat-title Multiple Languages
-          .col-md-2.feat-box
-            .icon-container
-              img(src="images/icons/secure-payment.svg" alt="")
-            h6.feat-title Secure Payment
-          .col-md-2.feat-box
-            .icon-container
-              img(src="images/icons/customer-service.svg" alt="")
-            h6.feat-title Customer Service
-          .col-md-2.feat-box
-            .icon-container
-              img(src="images/icons/free-shipping.svg" alt="")
-            h6.feat-title Free Shipping
-          .col-md-2.feat-box
-            .icon-container
-              img(src="images/icons/track-order.svg" alt="")
-            h6.feat-title Track Orders
-    // End Features
 
-    // Start Products 
+    // Start Features Section
+    section.main-section.features
+      .container-fluid
+        h2.h1.section-title Features
+        .row
+          .col-md-2.offset-md-1.col-sm-6
+            .feat-box
+              img(src="images/icons/secure-payment.svg" alt="")
+              h6 Secure Payment
+          .col-md-2.col-sm-6
+            .feat-box
+              img(src="images/icons/free-shipping.svg" alt="")
+              h6 Free Shipping
+          .col-md-2.col-sm-6
+            .feat-box
+              img(src="images/icons/customer-service.svg" alt="")
+              h6 Customer Service
+          .col-md-2.col-sm-6
+            .feat-box
+              img(src="images/icons/multi-langs.svg" alt="")
+              h6 Multi Languages
+          .col-md-2.col-sm-6
+            .feat-box
+              img(src="images/icons/track-order.svg" alt="")
+              h6 Track Order
+    // End Features Section
+
+
+    // Start Products Section
     section.main-section.products
-      h2.h1.section-title.text-center Products
-      .container
+      .container-fluid
+        h2.h1.section-title Products
         .products-container
           .row
-            .col-lg-3.col-md-6
-              .product.card
+            .col-md-3.col-sm-6
+              .card.product.mb-3
+                .card-header Product Category
+                  i.far.fa-heart.love-icon
                 .img-container
-                  img(src="images/iPhone/iphone-11-Pro-Space-Gray.png", alt="iPhone 11 Pro Space Gray")
-                button.btn.love-button
-                  svg.bi.bi-heart.heart-icon(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                    path(fill-rule='evenodd' d='M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z')
-                span.guidance-msg Double Click To Love It
-                ul.list-unstyled.product-rate
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                .product-info
-                  h5.product-title iPhone 11 Pro
-                  p.product-desc Product Description
-                .product-actions
-                  button.btn.btn-primary Buy Now
-                  a(href="#") Add To Cart
-
-            .col-lg-3.col-md-6
-              .product.card
+                  img.img-fluid(src="images/iphone/iPhone-11-Pro-Space-Gray.png" alt="")
+                .card-body
+                  h5.card-title Product Name
+                  p.card-text
+                    | Some quick example text to build on the card title and make up the bulk of the card's content.
+                .card-footer
+                  .row
+                    .col-md-6.col-sm-12
+                      button.btn.btn-success.btn-block Buy Now
+                    .col-md-6.col-sm-12
+                      button.btn.btn-link.btn-block(type="button") Add To Cart
+            .col-md-3.col-sm-6
+              .card.product.mb-3
+                .card-header Product Category
+                  i.far.fa-heart.love-icon
                 .img-container
-                  img(src="images/iPhone/iphone-11-Pro-MedNight-Green.png", alt="iPhone 11 Pro MedNight Green")
-                button.btn.love-button
-                  svg.bi.bi-heart.heart-icon(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                    path(fill-rule='evenodd' d='M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z')
-                span.guidance-msg Double Click To Love It
-                ul.list-unstyled.product-rate
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                .product-info
-                  h5.product-title iPhone 11 Pro
-                  p.product-desc Product Description
-                .product-actions
-                  button.btn.btn-primary Buy Now
-                  a(href="#") Add To Cart
-
-            .col-lg-3.col-md-6
-              .product.card
+                  img.img-fluid(src="images/iphone/iPhone-11-Pro-Space-Gray.png" alt="")
+                .card-body
+                  h5.card-title Product Name
+                  p.card-text
+                    | Some quick example text to build on the card title and make up the bulk of the card's content.
+                .card-footer
+                  .row
+                    .col-md-6.col-sm-12
+                      button.btn.btn-success.btn-block Buy Now
+                    .col-md-6.col-sm-12
+                      button.btn.btn-link.btn-block(type="button") Add To Cart
+            .col-md-3.col-sm-6
+              .card.product.mb-3
+                .card-header Product Category
+                  i.far.fa-heart.love-icon
                 .img-container
-                  img(src="images/iPhone/iphone-11-Pro-Silver.png", alt="iPhone 11 Pro Silver")
-                button.btn.love-button
-                  svg.bi.bi-heart.heart-icon(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                    path(fill-rule='evenodd' d='M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z')
-                span.guidance-msg Double Click To Love It
-                ul.list-unstyled.product-rate
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                .product-info
-                  h5.product-title iPhone 11 Pro
-                  p.product-desc Product Description
-                .product-actions
-                  button.btn.btn-primary Buy Now
-                  a(href="#") Add To Cart
-
-            .col-lg-3.col-md-6
-              .product.card
+                  img.img-fluid(src="images/iphone/iPhone-11-Pro-Space-Gray.png" alt="")
+                .card-body
+                  h5.card-title Product Name
+                  p.card-text
+                    | Some quick example text to build on the card title and make up the bulk of the card's content.
+                .card-footer
+                  .row
+                    .col-md-6.col-sm-12
+                      button.btn.btn-success.btn-block Buy Now
+                    .col-md-6.col-sm-12
+                      button.btn.btn-link.btn-block(type="button") Add To Cart
+            .col-md-3.col-sm-6
+              .card.product.mb-3
+                .card-header Product Category
+                  i.far.fa-heart.love-icon
                 .img-container
-                  img(src="images/iPhone/iphone-11-Pro-Gold.png", alt="iPhone 11 Pro Gold")
-                button.btn.love-button
-                  svg.bi.bi-heart.heart-icon(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                    path(fill-rule='evenodd' d='M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z')
-                span.guidance-msg Double Click To Love It
-                ul.list-unstyled.product-rate
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                .product-info
-                  h5.product-title iPhone 11 Pro
-                  p.product-desc Product Description
-                .product-actions
-                  button.btn.btn-primary Buy Now
-                  a(href="#") Add To Cart
-
-          .row.opacity
-            .col-lg-3.col-md-6
-              .product.card
-                .img-container
-                  img(src="images/iPhone/iphone-11-Pro-Space-Gray.png", alt="iPhone 11 Pro Space Gray")
-                button.btn.love-button
-                  svg.bi.bi-heart.heart-icon(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                    path(fill-rule='evenodd' d='M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z')
-                span.guidance-msg Double Click To Love It
-                ul.list-unstyled.product-rate
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                .product-info
-                  h5.product-title iPhone 11 Pro
-                  p.product-desc Product Description
-                .product-actions
-                  button.btn.btn-primary Buy Now
-                  a(href="#") Add To Cart
-
-            .col-lg-3.col-md-6
-              .product.card
-                .img-container
-                  img(src="images/iPhone/iphone-11-Pro-MedNight-Green.png", alt="iPhone 11 Pro MedNight Green")
-                button.btn.love-button
-                  svg.bi.bi-heart.heart-icon(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                    path(fill-rule='evenodd' d='M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z')
-                span.guidance-msg Double Click To Love It
-                ul.list-unstyled.product-rate
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                .product-info
-                  h5.product-title iPhone 11 Pro
-                  p.product-desc Product Description
-                .product-actions
-                  button.btn.btn-primary Buy Now
-                  a(href="#") Add To Cart
-
-            .col-lg-3.col-md-6
-              .product.card
-                .img-container
-                  img(src="images/iPhone/iphone-11-Pro-Silver.png", alt="iPhone 11 Pro Silver")
-                button.btn.love-button
-                  svg.bi.bi-heart.heart-icon(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                    path(fill-rule='evenodd' d='M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z')
-                span.guidance-msg Double Click To Love It
-                ul.list-unstyled.product-rate
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                .product-info
-                  h5.product-title iPhone 11 Pro
-                  p.product-desc Product Description
-                .product-actions
-                  button.btn.btn-primary Buy Now
-                  a(href="#") Add To Cart
-
-            .col-lg-3.col-md-6
-              .product.card
-                .img-container
-                  img(src="images/iPhone/iphone-11-Pro-Gold.png", alt="iPhone 11 Pro Gold")
-                button.btn.love-button
-                  svg.bi.bi-heart.heart-icon(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                    path(fill-rule='evenodd' d='M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z')
-                span.guidance-msg Double Click To Love It
-                ul.list-unstyled.product-rate
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                  li
-                    svg.bi.bi-star-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
-                      path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
-                .product-info
-                  h5.product-title iPhone 11 Pro
-                  p.product-desc Product Description
-                .product-actions
-                  button.btn.btn-primary Buy Now
-                  a(href="#") Add To Cart
-    // End Products
-
+                  img.img-fluid(src="images/iphone/iPhone-11-Pro-Space-Gray.png" alt="")
+                .card-body
+                  h5.card-title Product Name
+                  p.card-text
+                    | Some quick example text to build on the card title and make up the bulk of the card's content.
+                .card-footer
+                  .row
+                    .col-md-6.col-sm-12
+                      button.btn.btn-success.btn-block Buy Now
+                    .col-md-6.col-sm-12
+                      button.btn.btn-link.btn-block(type="button") Add To Cart
+    // End Products Section
 
 
     // Scripts 
     include pug/layout/scripts
+
+
+//- Features :-
+
+//- Secure Payment
+//- Free Shipping
+//- Customer Service
+//- Multi Languages
+//- Track Orders

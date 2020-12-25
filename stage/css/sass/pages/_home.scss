@@ -1,15 +1,14 @@
 .features {
   .feat-box {
-    background-color: #cfcfcf;
-    box-shadow: 0 0 4px 0 rgba(#000, .6);
     padding: 10px;
     margin: 0 auto;
     border-radius: 4px;
-    .icon-container {
-      img {
-        width: 40%;
-        height: 40%;
-      }
+    text-align: center;
+    img {
+      margin: 0 auto 10px auto;
+      display: block;
+      width: 80px;
+      height: 80px;
     }
     .feat-title {
       margin: 10px 0 0 0;
@@ -17,97 +16,56 @@
     }
   }
 }
+
 .products {
-  .section-title {
-    color: $blueColor;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  .products-container {
-    .product {
-      background-color: #bebebe;
-      margin: 0 auto 1.3rem auto;
-      padding: 30px 15px 0 15px;
+  .product {
+    background-color: #bcbcbc;
+    border-color: transparent;
+    margin: auto;
+    max-width: 18rem;
+    min-height: 545px;
+    cursor: pointer;
+    transition: box-shadow .5s;
+    &.loved {
+      box-shadow: 0 0 3px 1px $redColor;
+    }
+    @media (max-width: 767px) {
+      max-width: 95%;
+    }
+    .img-container {
+      width: 85%;
+      height: auto;
+      margin: 1rem auto 0 auto;
+      overflow: hidden;
+      img {
+        max-width: 100%;
+        object-fit: contain;
+        user-select: none;
+      }
+    }
+    .card-title {
+      text-align: center;
+    }
+    .card-footer {
+      button {
+        @media (max-width: 767px) {
+          margin-top: 5px;
+        }
+      }
+      .btn-link {
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 1.025em;
+      }
+    }
+    .card-header {
       position: relative;
-      border: none;
-      cursor: pointer;
-      transition: box-shadow .7s;
-      &:hover {
-        box-shadow: 0 0 5px 2px $blueColor;
-      }
-      .img-container {
-        img {
-          width: 100%;
-          height: 100%;
-        }
-      }
-      .love-button {
-        color: #000;
+      .love-icon {
         position: absolute;
-        top: -2px;
-        right: 1px;
-        font-size: 1.5em;
-        font-weight: bold;
-        border-radius: 50%;
-        padding: 0;
-        width: 36px;
-        height: 36px;
-        display: none;
-      }
-      .guidance-msg {
-        background-color: rgba(0, 0, 0, 0.6);
-        color: #FFF;
-        position: absolute;
-        top: 35%;
-        left: 0;
-        right: 0;
-        z-index: 999;
-        margin: auto;
-        width: 212px;
-        text-align: center;
-        padding: 5px;
-        font-weight: bold;
-        border-radius: 7px;
-      }
-      .product-rate {
-        margin-top: 5px;
-        margin-bottom: 0;
-        padding: 5px 0;
-        text-align: center;
-        li {
-          font-size: 1.3em;
-          color: #ffc107;
-          display: inline-block;
-        }
-      }
-      .product-info {
-        color: #000;
-        margin-top: 10px;
-        .product-title {
-          text-align: center;
-        }
-        .product-desc {
-          margin-bottom: 10px;
-        }
-      }
-      .product-actions {
-        text-align: center;
-        padding: 10px 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        button, a {
-          width: 50%;
-        }
-        a {
-          color: #434343;
-          text-decoration: none;
-          font-weight: bold;
-          font-size: 1.050em;
-          &:hover {
-            text-decoration: underline;
-          }
-        }
+        top: 50%;
+        right: 3%;
+        transform: translate(-3%, -50%);
+        font-size: 1.6rem;
       }
     }
   }
