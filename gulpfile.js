@@ -36,11 +36,6 @@ gulp.task("css", function () {
 // Start Js Files Compiling Task
 gulp.task("js", function () {
   return gulp
-    /* 
-      علامة التعجب قبل المسار معناها استثناءه من التاسك وتسمى بالانجليزية
-      Exclude Files
-      اذا كان التاسك متعدد المهام لاتنسى تحط التاسكات على شكل مصفوفة ***
-    */
     .src("stage/js/*.js"/*, ["!stage/js/*.js"]*/)
     .pipe(concat("main.js"))
     .pipe(uglify())
@@ -85,28 +80,3 @@ gulp.task("watch", function () {
 //     .pipe(conn.dest("/public_html"))
 //     .pipe(livereload());
 // });
-
-/*
-  Default Task
-    - Search On It
-*/
-
-
-/*
-  More Packages :
-
-  - gulp-babel
-    - Convert JavaScript Code With (ES6, ES7....) To Legacy Code Automaticly
-
-  - gulp-replace
-    - Replace Any String In Any File
-
-  - gulp-load-plugins
-    - (Read More About It)
-
-  - gulp-rename
-    - (Like: concat Package)
-
-  - gulp-plumber
-    - Work Continues Pipes When Show Any Error and prevent work it (The Next Pipes)
-*/
